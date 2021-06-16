@@ -1,0 +1,27 @@
+<html>
+    <head><title>註冊</title></head>   <!--網頁標題-->
+    <body>  <!--網頁內容-->
+        <form method="GET" action="regist.php">  <!--GET用來傳遞資料，action向regist.php發送資料-->
+            姓名：<input type=text name=id><br> <!--輸入內容為文字形式，將內容取名為id-->
+            密碼：<input type=password name=pwd><br> <!--輸入內容為密碼形式，將內容取名為pwd-->
+            性別：<input type=radio name=sex value=m checked>男 <!--輸入內容為選項按鈕，將內容取名為sex，值為m，顯示名稱為男-->
+            <input type=radio name=sex value=f>女 <!--輸入內容為選項按鈕，將內容取名為sex，值為f，顯示名稱為女-->
+            <input type=radio name=sex value=s>多元<br> <!--輸入內容為選項按鈕，將內容取名為sex，值為s，顯示名稱為多元-->
+            興趣：<input type=checkbox name=interest value=tv>看電視 <!--輸入內容為核取方塊，將內容取名為interest，值為tv，顯示名稱為看電視-->
+            <input type=checkbox name=interest value=movie>看電影 <!--輸入內容為核取方塊，將內容取名為interest，值為movie，顯示名稱為看電影-->
+            <input type=checkbox name=interest value=bike>騎車 <br> <!--輸入內容為核取方塊，將內容取名為interest，值為bike，顯示名稱為騎車-->
+            居住地：<select name=county> <!--將內容取名為county-->
+                <option value=taoyuan>桃園</option> <!--輸入內容為選項形式，值為taoyuan，顯示名稱為桃園-->
+                <option value=hsinchu selected>新竹縣/市</option> <!--輸入內容為選項形式，值為hsinchu，顯示名稱為新竹縣/市-->
+                <option value=miaoli>苗栗</option> <!--輸入內容為選項形式，值為miaoli，顯示名稱為苗栗-->
+                <option value=others>其他</option>  <!--輸入內容為選項形式，值為other，顯示名稱為其他-->
+            </select><br>
+            自傳：<br><textarea name=autobiography rows=10 cols=40> <!--輸入內容為文字區域，將內容取名為autobiography，行高為10，寬度為40-->
+請填入自傳... <!--顯示內容為:請填入自傳...-->
+            </textarea>
+            <p></p>
+            <input type=submit value="註冊"> <!--提交輸入的資料-->
+            <input type=reset value="清除"> <!--清除輸入的資料-->
+        </form>
+    </body>
+</html>
